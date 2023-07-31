@@ -1,6 +1,6 @@
 
 namespace ECommerce.Services.Catalog.Application.Products.Commands.CreateProduct;
-public class CreateProductCommand : IRequest<Response<ProductDto>>
+public class CreateProductCommand : IRequest<Response<ProductDto>>, IMapFrom<Product>
 {
     public string CategoryId { get; set; } = null!;
     public string Name { get; set; } = null!;

@@ -1,5 +1,5 @@
 namespace ECommerce.Services.Catalog.Application.Products.Commands.CreateProduct;
-public class ProductDto
+public class ProductDto : IMapFrom<Product>
 {
     public string CategoryId { get; set; } = null!;
     public string Name { get; set; } = null!;

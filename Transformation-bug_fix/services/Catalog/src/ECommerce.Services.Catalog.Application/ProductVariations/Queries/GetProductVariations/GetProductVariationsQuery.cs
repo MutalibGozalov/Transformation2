@@ -1,4 +1,4 @@
-namespace ECommerce.Services.Catalog.Application.ProductVariations.Queries.GetProductVariations;
+namespace ECommerce.Services.Catalog.Application.ProductVariations.Queries;
 public class GetProductVariationsQuery : IRequest<Response<List<ProductVariationDto>>> { }
 
 public class GetProductVariationsQueryHandler : IRequestHandler<GetProductVariationsQuery, Response<List<ProductVariationDto>>>

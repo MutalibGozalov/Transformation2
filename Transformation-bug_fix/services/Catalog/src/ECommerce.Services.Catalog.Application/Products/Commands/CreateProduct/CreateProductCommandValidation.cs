@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 namespace ECommerce.Services.Catalog.Application.Products.Commands.CreateProduct;
 public class CreateProductCommandValidation : AbstractValidator<CreateProductCommand>
 {

@@ -1,6 +1,6 @@
 
 namespace ECommerce.Services.Catalog.Application.Products.Commands.UpdateProduct;
-public class UpdateProductCommand : IRequest<Response<NoContent>>
+public class UpdateProductCommand : IRequest<Response<NoContent>>, IMapFrom<Product>
 {
     public string Id { get; set; } = null!;
     public string CategoryId { get; set; } = null!;

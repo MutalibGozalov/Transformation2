@@ -1,8 +1,6 @@
-namespace ECommerce.Services.Catalog.Application.ProductVariations.Queries.GetProductVariationById;
-public class GetProductVariationByIdQuery : IRequest<Response<ProductVariationDto>>
-{
-    public string Id { get; set; } = null!;
-}
+namespace ECommerce.Services.Catalog.Application.ProductVariations.Queries;
+public record GetProductVariationByIdQuery(string Id) : IRequest<Response<ProductVariationDto>>;
+
 
 public class GetProductVariationByIdQueryHandler : IRequestHandler<GetProductVariationByIdQuery, Response<ProductVariationDto>>
 {

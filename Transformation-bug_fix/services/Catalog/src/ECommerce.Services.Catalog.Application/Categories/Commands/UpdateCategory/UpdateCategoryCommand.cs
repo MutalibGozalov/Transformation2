@@ -1,5 +1,5 @@
 namespace ECommerce.Services.Catalog.Application.Categories.Commands.UpdateCategory;
-public class UpdateCategoryCommand : IRequest<Response<NoContent>>
+public class UpdateCategoryCommand : IRequest<Response<NoContent>>, IMapFrom<Category>
 {
     public string Id { get; set; }  = null!;
     public string Name { get; set; } = null!;

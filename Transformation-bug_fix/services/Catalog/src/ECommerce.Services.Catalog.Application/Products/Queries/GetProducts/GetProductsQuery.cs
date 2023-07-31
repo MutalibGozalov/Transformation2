@@ -1,4 +1,4 @@
-namespace ECommerce.Services.Catalog.Application.Products.Queries.GetProducts;
+namespace ECommerce.Services.Catalog.Application.Products.Queries;
  public class GetProductsQuery : IRequest<Response<List<ProductDto>>> { }
 
 public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, Response<List<ProductDto>>>

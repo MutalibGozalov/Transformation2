@@ -1,5 +1,5 @@
 namespace ECommerce.Services.Catalog.Application.ProductVariations.Commands.CreateProductVariation;
-public class CreateProductVariationCommand : IRequest<Response<ProductVariationDto>>
+public class CreateProductVariationCommand : IRequest<Response<ProductVariationDto>>, IMapFrom<ProductVariation>
 {
     public int SKU { get; set; }
     public int Quantity { get; set; }
