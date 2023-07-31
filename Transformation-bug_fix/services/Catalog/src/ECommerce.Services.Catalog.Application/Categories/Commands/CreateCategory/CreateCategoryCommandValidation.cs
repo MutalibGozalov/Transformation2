@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 namespace ECommerce.Services.Catalog.Application.Categories.Commands.CreateCategory;
 
 public class CreateCategoryCommandValidation : AbstractValidator<CreateCategoryCommand>
@@ -18,7 +16,7 @@ public class CreateCategoryCommandValidation : AbstractValidator<CreateCategoryC
         .WithMessage("Subcategory Id must be length of 24")
         //.Must(BeGuid)
         .Matches("^[a-fA-F0-9]{24}$")
-        .WithMessage("Subcategory Id contains unsupported characters");
+        .WithMessage("Subcategory Id contains unsupported characters LLALA");
     }
 
     //public bool BeGuid(string id) => Regex.IsMatch(id, "^[a-fA-F0-9]{24}$");
